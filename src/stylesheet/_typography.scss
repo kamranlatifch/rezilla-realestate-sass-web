@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+h1 {
+  @include font-styling($fs-2xl, $fw-bold, 4.0625rem, $text-clr-primary);
+}
+
+h2 {
+  @include font-styling($fs-xl, $fw-bold, 2.9375rem, $text-clr-primary);
+}
+
+h3 {
+  @include font-styling($fs-lg, $fw-bold, 2.5875rem, $text-clr-primary);
+}
+
+h4 {
+  @include font-styling($fs-md, $fw-semi-bold, 1.8188rem, $text-clr-primary);
+}
+
+h5 {
+  @include font-styling($fs-sm, $fw-semi-bold, 1.5rem, $text-clr-primary);
+}
+
+p {
+  @include font-styling($fs-sm, $fw-regular, 1.625rem, $text-clr-primary-light);
+}
+
+.small-paragraph {
+  @include font-styling($fs-xs, $fw-regular, 1.625rem, $text-clr-base);
+}
