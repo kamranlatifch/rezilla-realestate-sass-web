@@ -25,11 +25,21 @@ body {
   padding: 0.75rem 6.25rem 0.75rem 6.25rem;
   .address {
     @include flex-prop(flex, center, center, row, 0.5rem);
+    text-wrap: nowrap;
+    // @media (max-width: 525px) {
+    //   @include flex-prop(flex, center, center, column, 0.5rem);
+    // }
   }
   .info-details {
     @include flex-prop(flex, center, center, row, 1rem);
+    @media (max-width: 525px) {
+      @include flex-prop(flex, center, center, column, 0.5rem);
+    }
   }
   .contact {
     @include flex-prop(flex, center, center, row, 0.2rem);
+  }
+  @media (max-width: 768px) {
+    @include flex-prop(flex, space-between, center, column, 0);
   }
 }
