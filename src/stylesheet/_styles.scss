@@ -101,7 +101,7 @@ body {
 
       .tabs {
         @include flex-prop(flex, space-around, center, row, 0);
-        border-bottom: 0.125rem solid $text-clr-primary-light;
+        border-bottom: 0.0625rem solid $text-clr-primary-light;
 
         button {
           background-color: transparent;
@@ -244,12 +244,34 @@ body {
 }
 
 .clients-main {
-  height: 200px;
-  background-color: #3d5ef0;
   padding: 7rem 8.75rem;
   display: grid;
   justify-content: center;
+  position: relative;
+
   h5 {
     color: $text-clr-base-light;
+    text-align: center;
+  }
+  .clients-logo {
+    @include flex-prop(flex, space-between, center, row, 5.625rem);
+
+    .logo-wrapper {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      filter: grayscale(100%);
+    }
+  }
+  .ellipse {
+    background: linear-gradient(to top, #e1e8f8 0%, #7a92f8 100%);
+
+    position: absolute;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+    top: 42px;
+    left: 169px;
   }
 }
