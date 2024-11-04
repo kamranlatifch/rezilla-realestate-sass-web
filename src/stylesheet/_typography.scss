@@ -18,6 +18,13 @@ h4 {
 h5 {
   @include font-styling($fs-sm, $fw-semi-bold, 1.5rem, $text-clr-primary);
 }
+h6 {
+  @include font-styling($fs-md, $fw-semi-bold, 1.25rem, $text-clr-secondary);
+}
+
+.h5-buttons {
+  @include font-styling($fs-sm, $fw-semi-bold, 1.5rem, $text-clr-base);
+}
 
 p {
   @include font-styling($fs-sm, $fw-regular, 1.625rem, $text-clr-primary-light);

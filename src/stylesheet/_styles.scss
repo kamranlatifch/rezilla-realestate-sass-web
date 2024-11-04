@@ -5,20 +5,6 @@ body {
   box-sizing: border-box;
 }
 
-.container {
-  padding-left: 10.0625rem;
-
-  @media (max-width: 1200px) {
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-
-  @media (max-width: 768px) {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-
 .info-bar {
   @include flex-prop(flex, space-between, center, row, 0);
   background-color: $clr-primary;
@@ -26,9 +12,6 @@ body {
   .address {
     @include flex-prop(flex, center, center, row, 0.5rem);
     text-wrap: nowrap;
-    // @media (max-width: 525px) {
-    //   @include flex-prop(flex, center, center, column, 0.5rem);
-    // }
   }
   .info-details {
     @include flex-prop(flex, center, center, row, 1rem);
@@ -41,5 +24,232 @@ body {
   }
   @media (max-width: 768px) {
     @include flex-prop(flex, space-between, center, column, 0);
+  }
+}
+
+.main-hero-container {
+  background: linear-gradient(to bottom, #f3fcff 30%, #a7b5f2 100%);
+  border-bottom-left-radius: 50rem;
+  border-bottom-right-radius: 50rem;
+  position: relative;
+  .ellipse {
+    background: linear-gradient(to top, #e1e8f8 0%, #3d5ef0 100%);
+
+    position: fixed;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    transform: rotate(30deg);
+    top: 35rem;
+    left: 42.0625rem;
+  }
+
+  .main-header {
+    @include flex-prop(flex, space-between, center, row, 0);
+    padding: 0.75rem 6.25rem 0.75rem 6.25rem;
+    background-color: $clr-base;
+
+    .nav-logo,
+    .header-buttons,
+    .login,
+    .add-property {
+      @include flex-prop(flex, center, center, row, 1rem);
+    }
+    .nav-buttons {
+      display: flex;
+      gap: 0.625rem;
+    }
+    .nav-buttons .button {
+      background-color: transparent;
+      border: none;
+      padding: 0.8125rem 1rem;
+      border-radius: 1.875rem;
+      max &:hover {
+        background-color: rgba($clr-secondary, 0.3);
+      }
+    }
+    .header-logo {
+      display: grid;
+      background-color: $clr-primary;
+      width: 3.125rem;
+      height: 3.125rem;
+      justify-content: center;
+      align-content: center;
+      border-radius: 50%;
+    }
+    .add-property {
+      background-color: $clr-primary;
+      color: $text-clr-base;
+      padding: 0.9375rem 1.625rem 0.9375rem 1.625rem;
+      border-radius: 3.125rem;
+      max-height: 3.125rem;
+      border: none;
+    }
+  }
+  .hero-section {
+    @include flex-prop(flex, space-around, center, row, 0);
+    padding: 6rem 10rem;
+    gap: 8.75rem;
+
+    .form {
+      background-color: $clr-base;
+      display: grid;
+      gap: 1rem;
+      padding: 2.5rem 2.5rem;
+      border-radius: 1.875rem;
+      box-shadow: 0.625rem 1.875rem 3.125rem 0 rgba(0, 0, 0, 0.05);
+
+      .tabs {
+        @include flex-prop(flex, space-around, center, row, 0);
+        border-bottom: 0.125rem solid $text-clr-primary-light;
+
+        button {
+          background-color: transparent;
+          border: none;
+        }
+        .h5-buttons {
+          padding: 0rem 1.25rem;
+          color: $text-clr-secondary-dark;
+          border-bottom: 0.125rem solid $text-clr-secondary-dark;
+        }
+      }
+      input {
+        width: 21.25rem;
+        margin-top: 1.875rem;
+        border-radius: 1.25rem;
+        padding: 1.25rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 25rem;
+        line-height: 1.625rem;
+        border: none;
+        background-color: rgba($clr-accent, 0.3);
+      }
+      .search-filters {
+        @include flex-prop(flex, start, center, row, 0.625rem);
+        p {
+          color: $text-clr-secondary-dark;
+        }
+      }
+
+      .search-button {
+        @include flex-prop(flex, center, center, row, 0.625rem);
+
+        background-color: $text-clr-secondary-dark;
+        color: $text-clr-base;
+        padding: 1.25rem 0rem;
+        border-radius: 3.125rem;
+        font-size: $fs-sm;
+      }
+    }
+
+    .gallery-slider {
+      position: relative;
+      height: 21.25rem;
+      width: 33.75rem;
+      margin: auto;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      border-radius: 1.25rem;
+      z-index: 1;
+      .gallery-image {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 1.25rem;
+        }
+      }
+
+      .gallery-button {
+        position: absolute;
+        top: 9rem;
+
+        transform: translateY(-50%);
+        background: $text-clr-base; /* Semi-transparent background */
+        border: none;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: $text-clr-base-light;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 99 !important;
+      }
+
+      .gallery-button.left {
+        left: -1.25rem;
+      }
+
+      .gallery-button.right {
+        right: -1.25rem;
+      }
+    }
+  }
+  .hero-stats {
+    @include flex-prop(flex, center, center, row, 2rem);
+    background-color: none;
+    position: absolute;
+    top: 57.875rem;
+    left: 22.8125rem;
+
+    .happy-customers {
+      @include flex-prop(flex, center, center, row, 1rem);
+      padding: 0rem 2.25rem;
+      background-color: $clr-base;
+      border-radius: 3.125rem;
+      box-shadow: 0.625rem 1.875rem 3.125rem 0 rgba(0, 0, 0, 0.05);
+
+      max-height: 6.25rem;
+      position: relative;
+      .icons {
+        display: flex;
+        position: relative;
+      }
+
+      .icons img {
+        width: 2.25rem;
+        height: 2.25rem;
+        margin-left: -0.9375rem;
+        transition: transform 0.2s;
+      }
+
+      .icons img:hover {
+        transform: scale(1.1);
+      }
+      h4 {
+        max-width: 10ch;
+      }
+    }
+
+    .listing-stats {
+      @include flex-prop(flex, center, center, row, 1rem);
+      padding: 0rem 2.25rem;
+      background-color: $clr-base;
+      border-radius: 3.125rem;
+      box-shadow: 0.625rem 1.875rem 3.125rem 0 rgba(0, 0, 0, 0.05);
+      max-width: 20rem;
+      h4 {
+        max-width: 14ch;
+      }
+    }
+  }
+}
+
+.clients-main {
+  height: 200px;
+  background-color: #3d5ef0;
+  padding: 7rem 8.75rem;
+  display: grid;
+  justify-content: center;
+  h5 {
+    color: $text-clr-base-light;
   }
 }
