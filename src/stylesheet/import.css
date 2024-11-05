@@ -388,6 +388,12 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
   left: 190px;
 }
 
+h6,
+h2,
+p {
+  margin: 0;
+}
+
 .about-us {
   display: flex;
   justify-content: space-between;
@@ -400,11 +406,6 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
 .about-us .who-we-are {
   display: grid;
   gap: 30px;
-}
-.about-us .who-we-are h6,
-.about-us .who-we-are h2,
-.about-us .who-we-are p {
-  margin: 0;
 }
 .about-us .who-we-are .card {
   display: flex;
@@ -463,4 +464,124 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
   height: 206px;
   top: 90px;
   right: 350px;
+}
+
+.property-listings {
+  display: grid;
+  padding: 0 0 0 160px;
+  gap: 50px;
+}
+.property-listings .listing-headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.property-listings .listing-headers .listing-titles {
+  display: grid;
+  gap: 30px;
+}
+.property-listings .listing-headers .listing-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.property-listings .listing-headers .listing-buttons .button {
+  background-color: transparent;
+  padding: 19px 30px 19px 30px;
+  border-radius: 30px;
+  border: 1px solid #3a0ca3;
+  color: #3a0ca3;
+}
+.property-listings .listing-headers .listing-buttons .button.active {
+  background-color: #3a0ca3; /* Active background color */
+  color: #ffffff;
+}
+.property-listings .listing-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 3.125rem;
+  overflow: scroll;
+}
+.property-listings .listing-cards .card {
+  width: 340px;
+  border-radius: 8px;
+}
+.property-listings .listing-cards .image-container {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  overflow: hidden;
+}
+.property-listings .listing-cards .image-container .listing-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.property-listings .listing-cards .image-container .tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.625rem;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  padding: 10px 24px;
+  border-radius: 20px;
+}
+.property-listings .listing-cards .image-container .popular {
+  background-color: #ffe1e1;
+  color: #ff1111;
+  margin: 0;
+}
+.property-listings .listing-cards .image-container .new-listing {
+  background-color: #d7eeff;
+  color: #119bff;
+  margin: 0;
+}
+.property-listings .listing-cards .image-container .discounted {
+  background-color: #f1fff1;
+  color: #00ce3a;
+  margin: 0;
+}
+.property-listings .listing-cards .details {
+  display: grid;
+  gap: 20px;
+  padding: 32px 0;
+}
+.property-listings .listing-cards .details .price {
+  margin: 0;
+}
+.property-listings .listing-cards .details .title {
+  font-size: 1.1875rem;
+  margin: 0;
+  text-wrap: nowrap;
+}
+.property-listings .listing-cards .details .address {
+  margin: 0;
+}
+.property-listings .listing-cards .details .bed-bath {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: row;
+  gap: 0.625rem;
+}
+.property-listings .listing-cards .details .bed-bath p {
+  color: #2b2b2b;
+}
+.property-listings .listing-cards .details .bed-bath .beds,
+.property-listings .listing-cards .details .bed-bath .bath {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: row;
+  gap: 0.625rem;
 }/*# sourceMappingURL=import.css.map */
