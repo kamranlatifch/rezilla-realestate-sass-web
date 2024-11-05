@@ -591,3 +591,25 @@ body {
     }
   }
 }
+
+// Team
+
+.team {
+  display: grid;
+  gap: 100px;
+  h2,
+  h6 {
+    margin: 0;
+  }
+  .titles {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+  .team-members {
+    @include flex-prop(flex, center, center, row, 67px);
+    flex-wrap: wrap;
+    // padding: 0 213px;
+  }
+}

@@ -721,4 +721,27 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
   position: absolute;
   left: 40px;
   bottom: 30px;
+}
+
+.team {
+  display: grid;
+  gap: 100px;
+}
+.team h2,
+.team h6 {
+  margin: 0;
+}
+.team .titles {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  text-align: center;
+}
+.team .team-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 67px;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=import.css.map */
