@@ -4,6 +4,7 @@ import HeroHeader from './components/HeroHeader';
 import TrustedClients from './components/TrustedClients';
 import AboutUs from './components/AboutUs';
 import PropertyListing from './components/PropertyListing';
+import OurServices from './components/OurServices';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <TrustedClients />
       <AboutUs />
       <PropertyListing />
+      <OurServices />
     </>
   );
 }
