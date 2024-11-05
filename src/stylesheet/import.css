@@ -353,6 +353,103 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
 .main-hero-container .hero-stats .listing-stats h4 {
   max-width: 14ch;
 }
+@media (max-width: 1310px) {
+  .main-hero-container .main-header {
+    padding: 0.75rem 4rem;
+  }
+  .main-hero-container .main-header .nav-buttons {
+    gap: 0.5rem;
+  }
+  .main-hero-container .main-header .header-buttons {
+    flex-direction: column;
+  }
+  .main-hero-container .hero-section {
+    padding: 4rem 5rem;
+  }
+  .main-hero-container .hero-section .form {
+    padding: 1rem;
+    width: auto;
+  }
+}
+@media (max-width: 1180px) {
+  .main-hero-container .hero-section .gallery-slider {
+    position: relative;
+    height: 21.25rem;
+    width: 24rem;
+  }
+  .main-hero-container .hero-stats {
+    position: static;
+    top: auto;
+  }
+  .main-hero-container .ellipse {
+    top: 450px;
+    left: 33rem;
+  }
+}
+@media (max-width: 992px) {
+  .main-hero-container .hero-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .main-hero-container .hero-section .gallery-slider {
+    width: 100%;
+  }
+  .main-hero-container .hero-section .image-slider h1 {
+    font-size: 2rem;
+  }
+  .main-hero-container .hero-section .image-slider p {
+    font-size: 0.875rem;
+  }
+  .main-hero-container .hero-section .form {
+    width: 100%;
+  }
+  .main-hero-container .hero-section .form input {
+    width: calc(100% - 2rem);
+  }
+  .main-hero-container .ellipse {
+    top: 47.5rem;
+    left: 10rem;
+  }
+}
+@media (max-width: 768px) {
+  .main-hero-container .main-header {
+    padding: 0.5rem 2rem;
+  }
+  .main-hero-container .main-header .nav-buttons {
+    display: none;
+  }
+  .main-hero-container .hero-section {
+    padding: 2rem;
+  }
+  .main-hero-container .hero-section .form {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .main-hero-container .hero-section .form input {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+  .main-hero-container .gallery-slider {
+    width: 100%;
+    height: auto;
+  }
+  .main-hero-container .hero-stats {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .main-hero-container .hero-section {
+    padding: 1rem;
+  }
+  .main-hero-container .hero-section .form input {
+    font-size: 0.75rem;
+  }
+  .main-hero-container .hero-stats {
+    padding: 0.5rem;
+  }
+}
 
 .clients-main {
   padding: 7rem 8.75rem;
@@ -370,6 +467,8 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
   align-items: center;
   flex-direction: row;
   gap: 5.625rem;
+  padding: 3rem 0 3rem 0;
+  overflow: auto;
 }
 .clients-main .clients-logo .logo-wrapper {
   display: inline-flex;
@@ -387,6 +486,57 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
   top: 42px;
   left: 190px;
 }
+@media (max-width: 992px) {
+  .clients-main {
+    padding: 3rem 1.5rem;
+  }
+  .clients-main .ellipse {
+    width: 5rem;
+    height: 5rem;
+    top: 50px;
+    left: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .clients-main {
+    padding: 2.5rem 1rem;
+  }
+  .clients-main h5 {
+    font-size: 1.15rem;
+  }
+  .clients-main .logo-wrapper {
+    width: 3rem;
+    height: 3rem;
+  }
+  .clients-main .ellipse {
+    width: 3rem;
+    height: 3rem;
+    top: 0px;
+    left: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .clients-main {
+    padding: 2rem 0.5rem;
+  }
+  .clients-main h5 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .clients-main .clients-logo {
+    gap: 1rem;
+  }
+  .clients-main .logo-wrapper {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .clients-main .ellipse {
+    width: 3rem;
+    height: 3rem;
+    top: 0px;
+    left: 50px;
+  }
+}
 
 .about-us {
   display: flex;
@@ -394,7 +544,6 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
   align-items: start;
   flex-direction: row;
   gap: 2.875rem;
-  position: relative;
   padding: 7rem 160px;
 }
 .about-us h6,
@@ -406,7 +555,11 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
   display: grid;
   gap: 30px;
 }
-.about-us .who-we-are .card {
+.about-us .who-we-are .cards {
+  display: grid;
+  gap: 30px;
+}
+.about-us .who-we-are .cards .card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,7 +571,7 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
   box-shadow: 0.625rem 1.875rem 3.125rem 0 rgba(0, 0, 0, 0.05);
   max-width: 25rem;
 }
-.about-us .who-we-are .card p {
+.about-us .who-we-are .cards .card p {
   width: 274px;
 }
 .about-us .image-div {
@@ -446,6 +599,13 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
   border-radius: 1.875rem;
   max-width: 17.5rem;
 }
+.about-us .image-div .stamp {
+  position: absolute;
+  width: 206px;
+  height: 206px;
+  top: -90px;
+  right: 190px;
+}
 .about-us .ellipse {
   background: linear-gradient(to top, #dee1ee 0%, #4361ee 100%);
   opacity: 30%;
@@ -454,15 +614,87 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
   height: 60px;
   border-radius: 50%;
   transform: rotate(30deg);
-  bottom: 145px;
-  right: 310px;
+  bottom: 30px;
+  right: 150px;
 }
-.about-us .stamp {
-  position: absolute;
-  width: 206px;
-  height: 206px;
-  top: 90px;
-  right: 350px;
+@media (max-width: 1220px) {
+  .about-us {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us .who-we-are {
+    padding: 0 1.5rem;
+  }
+  .about-us .who-we-are h2,
+  .about-us .who-we-are h6,
+  .about-us .who-we-are p {
+    text-align: center;
+  }
+  .about-us .who-we-are .cards {
+    display: flex;
+  }
+  .about-us .image-div {
+    align-self: auto;
+  }
+}
+@media (max-width: 900px) {
+  .about-us {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1.5rem;
+  }
+  .about-us h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  .about-us .who-we-are .cards {
+    display: grid;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .about-us {
+    padding: 2.5rem 1rem;
+  }
+  .about-us h6 {
+    font-size: 1rem;
+  }
+  .about-us h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .about-us .who-we-are .card {
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: start;
+  }
+  .about-us .image-div .main-image {
+    margin-top: 0;
+  }
+  .about-us .image-div .div2 img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .about-us .who-we-are .cards .card p {
+    width: auto;
+  }
+  .about-us .image-div .main-image {
+    max-width: 50%;
+  }
+  .about-us .image-div .div2 img {
+    max-width: 100%;
+  }
+  .about-us .image-div .ellipse {
+    width: 50px;
+    height: 50px;
+    bottom: 60px;
+    right: 120px;
+  }
+  .about-us .image-div .stamp {
+    top: 120px;
+    right: 100px;
+  }
 }
 
 .property-listings {
@@ -585,6 +817,49 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
   flex-direction: row;
   gap: 0.625rem;
 }
+@media (max-width: 900px) {
+  .property-listings {
+    padding: 20px;
+  }
+  .property-listings .listing-headers {
+    display: grid;
+    gap: 10px;
+  }
+  .property-listings .listing-headers .listing-titles {
+    gap: 20px;
+  }
+  .property-listings .listing-headers .listing-titles h2,
+  .property-listings .listing-headers .listing-titles h6,
+  .property-listings .listing-headers .listing-titles p {
+    margin: 0;
+  }
+}
+@media (max-width: 425px) {
+  .property-listings {
+    padding: 10px;
+  }
+  .property-listings .listing-headers .listing-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .property-listings .listing-headers .listing-buttons .button {
+    background-color: transparent;
+    padding: 19px 30px 19px 30px;
+    border-radius: 30px;
+    border: 1px solid #3a0ca3;
+    color: #3a0ca3;
+  }
+  .property-listings .listing-headers .listing-buttons .button.active {
+    background-color: #3a0ca3;
+    color: #ffffff;
+  }
+  .property-listings .listing-cards {
+    padding: 10px;
+  }
+}
 
 .our-services {
   display: grid;
@@ -626,6 +901,23 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
 }
 .our-services .services-cards .card p {
   width: 220px;
+}
+@media (max-width: 768px) {
+  .our-services {
+    padding: 10px;
+  }
+  .our-services .services-cards .card {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  .our-services {
+    padding: 10px;
+  }
+  .our-services .services-cards .card {
+    padding: 10px;
+    width: 100%;
+  }
 }
 
 .neighbourhood {
@@ -721,6 +1013,90 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
   position: absolute;
   left: 40px;
   bottom: 30px;
+}
+@media (max-width: 840px) {
+  .neighbourhood {
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 768px) {
+  .neighbourhood {
+    padding: 30px;
+  }
+  .neighbourhood .neighbourhood-images {
+    display: grid;
+    gap: 50px;
+  }
+  .neighbourhood .neighbourhood-images .images .new-york {
+    width: 100%;
+    position: relative;
+  }
+  .neighbourhood .neighbourhood-images .images .new-york img {
+    width: 100%;
+  }
+  .neighbourhood .neighbourhood-images .images .new-york .image-tag {
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+  }
+  .neighbourhood .neighbourhood-images .images .houston {
+    width: 100%;
+    position: relative;
+  }
+  .neighbourhood .neighbourhood-images .images .houston img {
+    width: 100%;
+  }
+  .neighbourhood .neighbourhood-images .images .houston .image-tag {
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+  }
+  .neighbourhood .neighbourhood-images .images .san-diago {
+    width: 100%;
+    position: relative;
+  }
+  .neighbourhood .neighbourhood-images .images .san-diago img {
+    width: 100%;
+  }
+  .neighbourhood .neighbourhood-images .images .san-diago .image-tag {
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+  }
+  .neighbourhood .neighbourhood-images .images .philodelphia {
+    width: 100%;
+    position: relative;
+  }
+  .neighbourhood .neighbourhood-images .images .philodelphia img {
+    width: 100%;
+  }
+  .neighbourhood .neighbourhood-images .images .philodelphia .image-tag {
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+  }
+  .neighbourhood .neighbourhood-images .images .san-francisco {
+    width: 100%;
+    position: relative;
+  }
+  .neighbourhood .neighbourhood-images .images .san-francisco img {
+    width: 100%;
+  }
+  .neighbourhood .neighbourhood-images .images .san-francisco .image-tag {
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+  }
+  .neighbourhood .ellipse {
+    top: 150px;
+    left: 50px;
+  }
+  .neighbourhood .ellipse1 {
+    width: 50px;
+    height: 50px;
+    bottom: 0px;
+    right: 206px;
+  }
 }
 
 .team {

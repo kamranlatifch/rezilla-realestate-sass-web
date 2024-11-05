@@ -17,18 +17,20 @@ const AboutUs = () => {
           dignissim purus. Nulla convallis ipsum molestie nibh malesuada, ac
           malesuada leo volutpat.
         </p>
-        <div className='card'>
-          <SVG1 />
-          <div className='details'>
-            <h6 className='.h5-md'>Donec porttitor euismod</h6>
-            <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+        <div className='cards'>
+          <div className='card'>
+            <SVG1 />
+            <div className='details'>
+              <h6 className='.h5-md'>Donec porttitor euismod</h6>
+              <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+            </div>
           </div>
-        </div>
-        <div className='card'>
-          <SVG2 />
-          <div className='details'>
-            <h6 className='.h5-md'>Donec porttitor euismod</h6>
-            <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+          <div className='card'>
+            <SVG2 />
+            <div className='details'>
+              <h6 className='.h5-md'>Donec porttitor euismod</h6>
+              <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+            </div>
           </div>
         </div>
       </div>
@@ -39,16 +41,10 @@ const AboutUs = () => {
           <img src={AboutImage2} alt='' />
           <img src={AboutImage3} alt='' />
         </div>
-      </div>
-      {/* <div className='stamp'>
-        <h6 className='.h5-md stamp-text'>
-          - Real Estate Since 2022 - Real Estate Since 2022{' '}
-        </h6>
-      </div> */}
-
-      <div className='ellipse'></div>
-      <div className='stamp'>
-        <Stamp />
+        <div className='stamp'>
+          <Stamp />
+        </div>
+        <div className='ellipse'></div>
       </div>
     </div>
   );
