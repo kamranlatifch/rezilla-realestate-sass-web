@@ -35,12 +35,12 @@ body {
   .ellipse {
     background: linear-gradient(to top, #e1e8f8 0%, #3d5ef0 100%);
 
-    position: fixed;
+    position: absolute;
     width: 3.75rem;
     height: 3.75rem;
     border-radius: 50%;
     transform: rotate(30deg);
-    top: 35rem;
+    top: 520px;
     left: 42.0625rem;
   }
 
@@ -280,14 +280,15 @@ body {
   @include flex-prop(flex, space-between, start, row, 2.875rem);
   position: relative;
   padding: 7rem 160px;
+  h6,
+  h2,
+  p {
+    margin: 0;
+  }
   .who-we-are {
     display: grid;
     gap: 30px;
-    h6,
-    h2,
-    p {
-      margin: 0;
-    }
+
     .card {
       @include flex-prop(flex, center, center, row, 1.5625rem);
       padding: 1.875rem 1.875rem;
@@ -340,5 +341,253 @@ body {
 
     top: 90px;
     right: 350px;
+  }
+}
+
+// Listings
+.property-listings {
+  display: grid;
+  padding: 0 0 0 160px;
+  gap: 50px;
+  .listing-headers {
+    @include flex-prop(flex, space-between, center, row, 20px);
+
+    .listing-titles {
+      display: grid;
+      gap: 30px;
+    }
+    .listing-buttons {
+      @include flex-prop(flex, space-between, center, row, 20px);
+      margin-right: 6.25rem;
+
+      .button {
+        background-color: transparent;
+        padding: 19px 30px 19px 30px;
+        border-radius: 30px;
+        border: 1px solid $clr-primary;
+        color: $clr-primary;
+      }
+
+      .button.active {
+        background-color: $clr-primary; /* Active background color */
+        color: $text-clr-base;
+      }
+    }
+  }
+
+  .listing-cards {
+    @include flex-prop(flex, space-between, center, row, 3.125rem);
+    overflow: scroll;
+
+    .card {
+      width: 340px;
+
+      border-radius: 8px;
+      //   overflow: hidden;
+    }
+
+    .image-container {
+      position: relative;
+      width: 340px;
+      height: 340px;
+      overflow: hidden;
+      .listing-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .tag {
+        @include flex-prop(flex, space-between, center, row, 0.625rem);
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        padding: 10px 24px;
+        border-radius: 20px;
+      }
+      .popular {
+        background-color: #ffe1e1;
+        color: #ff1111;
+        margin: 0;
+      }
+      .new-listing {
+        background-color: #d7eeff;
+        color: #119bff;
+        margin: 0;
+      }
+      .discounted {
+        background-color: #f1fff1;
+        color: #00ce3a;
+        margin: 0;
+      }
+    }
+
+    .details {
+      display: grid;
+      gap: 20px;
+      padding: 32px 0;
+
+      .price {
+        margin: 0;
+      }
+
+      .title {
+        font-size: 1.1875rem;
+        margin: 0;
+        text-wrap: nowrap;
+      }
+
+      .address {
+        margin: 0;
+      }
+
+      .bed-bath {
+        @include flex-prop(flex, start, start, row, 0.625rem);
+        p {
+          color: $text-clr-primary;
+        }
+        .beds,
+        .bath {
+          @include flex-prop(flex, start, start, row, 0.625rem);
+        }
+      }
+    }
+  }
+}
+
+// Services
+
+.our-services {
+  display: grid;
+  gap: 40px;
+  padding: 100px 160px 130px 160px;
+  background-color: $clr-accent;
+  h2,
+  h5 {
+    text-align: center;
+    margin: 0;
+  }
+
+  .services-cards {
+    @include flex-prop(flex, center, center, row, 3.125rem);
+    flex-wrap: wrap;
+
+    .card {
+      display: grid;
+      padding: 40px 60px;
+      justify-items: center;
+      text-align: center;
+
+      background-color: $clr-base;
+      border-radius: 30px;
+      box-shadow: 10px 30px 50px 0 rgba(0, 0, 0, 0.05);
+
+      .icon {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: $clr-secondary;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        box-shadow: 4px 10px 30px 0 #4361ee66;
+      }
+      p {
+        width: 220px;
+      }
+    }
+  }
+}
+
+// Neighbourhood
+.neighbourhood {
+  position: relative;
+  display: grid;
+  padding: 210px 160px;
+  gap: 80px;
+
+  .ellipse {
+    background: linear-gradient(to top, #eff1f7 0%, #4361ee 100%);
+    opacity: 50%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transform: rotate(30deg);
+    top: 61px;
+    left: 650px;
+  }
+  .ellipse1 {
+    background: linear-gradient(to top, #eff1f7 0%, #4361ee 100%);
+    opacity: 50%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+    bottom: 50px;
+    right: 206px;
+  }
+  .titles {
+    display: grid;
+    gap: 30px;
+    h2,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .neighbourhood-images {
+    display: grid;
+    gap: 50px;
+    .images {
+      @include flex-prop(flex, center, center, row, 50px);
+      flex-wrap: wrap;
+      h1,
+      h4 {
+        margin: 0;
+        color: $text-clr-base-light;
+      }
+      .new-york {
+        position: relative;
+        .image-tag {
+          position: absolute;
+          left: 40px;
+          bottom: 30px;
+        }
+      }
+      .houston {
+        position: relative;
+        .image-tag {
+          position: absolute;
+          left: 40px;
+          bottom: 30px;
+        }
+      }
+      .san-diago {
+        position: relative;
+        .image-tag {
+          position: absolute;
+          left: 40px;
+          bottom: 30px;
+        }
+      }
+      .philodelphia {
+        position: relative;
+        .image-tag {
+          position: absolute;
+          left: 40px;
+          bottom: 30px;
+        }
+      }
+      .san-francisco {
+        position: relative;
+        .image-tag {
+          position: absolute;
+          left: 40px;
+          bottom: 30px;
+        }
+      }
+    }
   }
 }
