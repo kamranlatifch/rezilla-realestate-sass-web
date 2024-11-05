@@ -500,3 +500,94 @@ body {
 }
 
 // Neighbourhood
+.neighbourhood {
+  position: relative;
+  display: grid;
+  padding: 210px 160px;
+  gap: 80px;
+
+  .ellipse {
+    background: linear-gradient(to top, #eff1f7 0%, #4361ee 100%);
+    opacity: 50%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transform: rotate(30deg);
+    top: 61px;
+    left: 650px;
+  }
+  .ellipse1 {
+    background: linear-gradient(to top, #eff1f7 0%, #4361ee 100%);
+    opacity: 50%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+    bottom: 50px;
+    right: 206px;
+  }
+  .titles {
+    display: grid;
+    gap: 30px;
+    h2,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .neighbourhood-images {
+    display: grid;
+    gap: 50px;
+    .images {
+      @include flex-prop(flex, center, center, row, 50px);
+      flex-wrap: wrap;
+      h1,
+      h4 {
+        margin: 0;
+        color: $text-clr-base-light;
+      }
+      .new-york {
+        position: relative;
+        .image-tag {
+          position: absolute;
+          left: 40px;
+          bottom: 30px;
+        }
+      }
+      .houston {
+        position: relative;
+        .image-tag {
+          position: absolute;
+          left: 40px;
+          bottom: 30px;
+        }
+      }
+      .san-diago {
+        position: relative;
+        .image-tag {
+          position: absolute;
+          left: 40px;
+          bottom: 30px;
+        }
+      }
+      .philodelphia {
+        position: relative;
+        .image-tag {
+          position: absolute;
+          left: 40px;
+          bottom: 30px;
+        }
+      }
+      .san-francisco {
+        position: relative;
+        .image-tag {
+          position: absolute;
+          left: 40px;
+          bottom: 30px;
+        }
+      }
+    }
+  }
+}

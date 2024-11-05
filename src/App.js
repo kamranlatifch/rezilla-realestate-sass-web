@@ -5,6 +5,7 @@ import TrustedClients from './components/TrustedClients';
 import AboutUs from './components/AboutUs';
 import PropertyListing from './components/PropertyListing';
 import OurServices from './components/OurServices';
+import Neighbourhood from './components/Neighbourhood';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutUs />
       <PropertyListing />
       <OurServices />
+      <Neighbourhood />
     </>
   );
 }
