@@ -35,12 +35,12 @@ body {
   .ellipse {
     background: linear-gradient(to top, #e1e8f8 0%, #3d5ef0 100%);
 
-    position: fixed;
+    position: absolute;
     width: 3.75rem;
     height: 3.75rem;
     border-radius: 50%;
     transform: rotate(30deg);
-    top: 35rem;
+    top: 520px;
     left: 42.0625rem;
   }
 
@@ -275,15 +275,16 @@ body {
     left: 190px;
   }
 }
-h6,
-h2,
-p {
-  margin: 0;
-}
+
 .about-us {
   @include flex-prop(flex, space-between, start, row, 2.875rem);
   position: relative;
   padding: 7rem 160px;
+  h6,
+  h2,
+  p {
+    margin: 0;
+  }
   .who-we-are {
     display: grid;
     gap: 30px;
@@ -357,6 +358,7 @@ p {
     }
     .listing-buttons {
       @include flex-prop(flex, space-between, center, row, 20px);
+      margin-right: 6.25rem;
 
       .button {
         background-color: transparent;
@@ -452,3 +454,49 @@ p {
     }
   }
 }
+
+// Services
+
+.our-services {
+  display: grid;
+  gap: 40px;
+  padding: 100px 160px 130px 160px;
+  background-color: $clr-accent;
+  h2,
+  h5 {
+    text-align: center;
+    margin: 0;
+  }
+
+  .services-cards {
+    @include flex-prop(flex, center, center, row, 3.125rem);
+    flex-wrap: wrap;
+
+    .card {
+      display: grid;
+      padding: 40px 60px;
+      justify-items: center;
+      text-align: center;
+
+      background-color: $clr-base;
+      border-radius: 30px;
+      box-shadow: 10px 30px 50px 0 rgba(0, 0, 0, 0.05);
+
+      .icon {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: $clr-secondary;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        box-shadow: 4px 10px 30px 0 #4361ee66;
+      }
+      p {
+        width: 220px;
+      }
+    }
+  }
+}
+
+// Neighbourhood
