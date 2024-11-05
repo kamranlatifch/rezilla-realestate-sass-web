@@ -16,6 +16,8 @@ import GallarySlider from './GallarySlider';
 const HeroHeader = () => {
   return (
     <div className='main-hero-container'>
+      <div className='ellipse'></div>
+
       <div className='main-header'>
         <div className='nav-buttons'>
           <button className='button'>Home</button>
@@ -79,7 +81,6 @@ const HeroHeader = () => {
           </button>
         </div>
       </div>
-      <div className='ellipse'></div>
       <div className='hero-stats'>
         <div className='happy-customers'>
           <div className='icons'>
