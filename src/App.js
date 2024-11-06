@@ -7,6 +7,7 @@ import PropertyListing from './components/PropertyListing';
 import OurServices from './components/OurServices';
 import Neighbourhood from './components/Neighbourhood';
 import Team from './components/Team';
+import Blogs from './components/Blogs';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <OurServices />
       <Neighbourhood />
       <Team />
+      <Blogs />
     </>
   );
 }
