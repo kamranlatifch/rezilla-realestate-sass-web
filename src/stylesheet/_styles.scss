@@ -737,7 +737,7 @@ body {
         }
         .beds,
         .bath {
-          @include flex-prop(flex, start, start, row, 0.625rem);
+          @include flex-prop(flex, start, center, row, 0.625rem);
         }
       }
     }
@@ -1030,6 +1030,7 @@ body {
 .team {
   display: grid;
   gap: 100px;
+  padding: 30px 0 180px 0;
   h2,
   h6 {
     margin: 0;
@@ -1043,5 +1044,75 @@ body {
   .team-members {
     @include flex-prop(flex, center, center, row, 67px);
     flex-wrap: wrap;
+  }
+}
+
+// Blogs
+
+.blogs {
+  display: grid;
+  padding: 100px 0px;
+  gap: 80px;
+  background-color: $clr-primary;
+  color: $text-clr-base;
+  h6,
+  h2 {
+    margin: 0;
+    color: $text-clr-base;
+  }
+  .titles {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .blogs-cards {
+    @include flex-prop(flex, center, center, row, 3.125rem);
+    flex-wrap: wrap;
+
+    .card {
+      max-width: 340px;
+      display: grid;
+      gap: 30px;
+
+      .image-container {
+        position: relative;
+
+        .date-tag {
+          position: absolute;
+          top: 0;
+          left: 50px;
+          background-color: $clr-base;
+          padding: 10px;
+          z-index: 1;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.25);
+
+          h4,
+          p {
+            margin: 0;
+            text-align: center;
+          }
+        }
+      }
+      .details {
+        display: grid;
+        gap: 20px;
+
+        h3 {
+          margin: 0;
+          color: $text-clr-base;
+        }
+        p {
+          margin: 0;
+          color: $text-clr-base-light;
+        }
+      }
+      .button {
+        justify-self: end;
+      }
+    }
   }
 }

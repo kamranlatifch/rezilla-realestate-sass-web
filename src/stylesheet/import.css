@@ -813,7 +813,7 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
 .property-listings .listing-cards .details .bed-bath .bath {
   display: flex;
   justify-content: start;
-  align-items: start;
+  align-items: center;
   flex-direction: row;
   gap: 0.625rem;
 }
@@ -1102,6 +1102,7 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
 .team {
   display: grid;
   gap: 100px;
+  padding: 30px 0 180px 0;
 }
 .team h2,
 .team h6 {
@@ -1120,4 +1121,70 @@ max .main-hero-container .main-header .nav-buttons .button:hover {
   flex-direction: row;
   gap: 67px;
   flex-wrap: wrap;
+}
+
+.blogs {
+  display: grid;
+  padding: 100px 0px;
+  gap: 80px;
+  background-color: #3a0ca3;
+  color: #ffffff;
+}
+.blogs h6,
+.blogs h2 {
+  margin: 0;
+  color: #ffffff;
+}
+.blogs .titles {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+.blogs .blogs-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3.125rem;
+  flex-wrap: wrap;
+}
+.blogs .blogs-cards .card {
+  max-width: 340px;
+  display: grid;
+  gap: 30px;
+}
+.blogs .blogs-cards .card .image-container {
+  position: relative;
+}
+.blogs .blogs-cards .card .image-container .date-tag {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  background-color: #ffffff;
+  padding: 10px;
+  z-index: 1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+.blogs .blogs-cards .card .image-container .date-tag h4,
+.blogs .blogs-cards .card .image-container .date-tag p {
+  margin: 0;
+  text-align: center;
+}
+.blogs .blogs-cards .card .details {
+  display: grid;
+  gap: 20px;
+}
+.blogs .blogs-cards .card .details h3 {
+  margin: 0;
+  color: #ffffff;
+}
+.blogs .blogs-cards .card .details p {
+  margin: 0;
+  color: #aaaaaa;
+}
+.blogs .blogs-cards .card .button {
+  justify-self: end;
 }/*# sourceMappingURL=import.css.map */
