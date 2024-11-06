@@ -10,6 +10,8 @@ import Team from './components/Team';
 import Blogs from './components/Blogs';
 import Testimonials from './components/Testimonials';
 import Agent from './components/Agent';
+import Footer from './components/Footer';
+import FooterInfoBar from './components/FooterInfoBar';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
       <Blogs />
       <Testimonials />
       <Agent />
+      <Footer />
+      <FooterInfoBar />
     </>
   );
 }
