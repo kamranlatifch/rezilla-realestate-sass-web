@@ -8,6 +8,7 @@ import OurServices from './components/OurServices';
 import Neighbourhood from './components/Neighbourhood';
 import Team from './components/Team';
 import Blogs from './components/Blogs';
+import Testimonials from './components/Testimonials';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Neighbourhood />
       <Team />
       <Blogs />
+      <Testimonials />
     </>
   );
 }
