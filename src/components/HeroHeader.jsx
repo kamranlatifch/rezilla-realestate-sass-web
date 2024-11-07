@@ -1,4 +1,5 @@
 import React from 'react';
+
 import HomeIcon from '../assets/svgs/HomeIcon';
 import { ReactComponent as UserIcon } from '../assets/svgs/User.svg';
 import { ReactComponent as SearchFilters } from '../assets/svgs/SearchFilterts.svg';

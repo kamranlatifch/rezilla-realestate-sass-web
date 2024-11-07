@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ReactComponent as PopularSvg } from '../assets/svgs/PopularIcon.svg';
 import { ReactComponent as NewSvg } from '../assets/svgs/NewListing.svg';
 import { ReactComponent as DiscountedSvg } from '../assets/svgs/DiscountedPrice.svg';

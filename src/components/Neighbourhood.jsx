@@ -1,4 +1,5 @@
 import React from 'react';
+
 import imgNewYork from '../assets/images/NeighbouhoodNY.png';
 import imgHouston from '../assets/images/NBHouston.png';
 import imgSanDiago from '../assets/images/NBSiandeigo.png';

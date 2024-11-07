@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import ListingCard from './ListingCard';
 import Listing1 from '../assets/images/Listing1.png';
 import Listing2 from '../assets/images/Listing2.png';

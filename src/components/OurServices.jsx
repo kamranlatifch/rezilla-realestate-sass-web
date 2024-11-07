@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ReactComponent as Search } from '../assets/svgs/ServicesSearch.svg';
 import { ReactComponent as Home } from '../assets/svgs/ServicesHome.svg';
 import { ReactComponent as Bed } from '../assets/svgs/ServicesBed.svg';
