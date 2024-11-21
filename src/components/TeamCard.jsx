@@ -1,5 +1,4 @@
 import React from 'react';
-
 const TeamCard = ({ image, name, designation }) => {
   return (
     <div className='card'>

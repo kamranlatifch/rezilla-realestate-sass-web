@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ReactComponent as Comma } from '../assets/svgs/TestimonialComma.svg';
 import RatingStar from '../assets/svgs/RatingStar';
 

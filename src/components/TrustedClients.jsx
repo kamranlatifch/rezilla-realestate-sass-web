@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ReactComponent as Google } from '../assets/svgs/google.svg';
 import { ReactComponent as Amazon } from '../assets/svgs/amazon.svg';
 import { ReactComponent as LogiTech } from '../assets/svgs/logitech.svg';

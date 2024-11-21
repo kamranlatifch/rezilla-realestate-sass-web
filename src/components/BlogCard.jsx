@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ReactComponent as NextIcon } from '../assets/svgs/BlogNext.svg';
 
 const BlogCard = ({ image, title, description, date }) => {

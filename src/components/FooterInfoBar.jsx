@@ -1,7 +1,4 @@
 import React from 'react';
-import { ReactComponent as MapPin } from '../assets/svgs/MapPin.svg';
-import { ReactComponent as Phone } from '../assets/svgs/Phone.svg';
-import { ReactComponent as Email } from '../assets/svgs/Email.svg';
 
 const FooterInfoBar = () => {
   return (

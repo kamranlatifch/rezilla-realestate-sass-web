@@ -1,4 +1,5 @@
 import React from 'react';
+
 import HomeIcon from '../assets/svgs/HomeIcon';
 import Phone from '../assets/svgs/phone';
 import Email from '../assets/svgs/Email';
